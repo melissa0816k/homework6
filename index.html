@@ -39,10 +39,10 @@ window.alert("My last homework!");
 </div>
 <br>
 <br>
+   <h2 style="text-align: center">Audience Demographics</h2>
 <div class="container-fluid">
 <div class="row">    
 <div class="col-md-6 col-sm-offset-1">
-    <h2>Audience Demographics</h2>
     <div id="mybar01" style="width: 600px;height:400px;"></div>
     <script>
         option = {
@@ -99,6 +99,8 @@ window.alert("My last homework!");
 </div>
 </div>
 <br>
+<br>
+<h2 style="text-align: center">Content Drilldown</h2>
 <div class="container-fluid">
 <div class="row">    
 <div class="col-md-4 col-sm-offset-1">
@@ -111,7 +113,7 @@ window.alert("My last homework!");
             </ul>
             <br>
     <p>They mostly would reclick my homepage button to view. And due to the promotion, most of them would spend
-        time on Homework 5 which I persuaded my friends to take a look. <p>
+        time on Homework 5 which I persuaded my friends to take a look. And among viewers,  <p>
 
 </div>
 <div class="col-md-6 col-sm-offset-1">
@@ -125,10 +127,6 @@ option = {
     tooltip : {
         trigger: 'axis'
     },
-    legend: {
-        data:['page view']
-    },
-
     calculable : true,
     xAxis : [
         {
@@ -163,6 +161,86 @@ option = {
 </div>
 </div>
 </div>
+<br>
+<br>
+<h2 style="text-align: center"> Advantage of using Instagram as promotion tool </h2>
+<div class="container-fluid">
+<div class="row">    
+<div class="col-md-6 col-sm-offset-1">
+    <div id="mybar03" style="width: 600px;height:400px;"></div>
+<script>
+    option = {
+    title : {
+        text: 'New and Returning Visitors Page View',
+        subtext: 'Google Analytddics'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'right',
+        data:['mobile','desktop','tablet']
+    },
+    series: [
+        {
+            name:'device category',
+            type:'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:51, name:'mobile'},
+                {value:25, name:'desktop'},
+                {value:3, name:'tablet'}
+            ]
+        }
+    ]
+};
+// Use the option to display chart
+        var myChart3 = echarts.init(document.getElementById('mybar03'));
+        myChart3.setOption(option);
+</script>
+</div>
+<div class="col-md-4 col-sm-offset-1">
+    <br>
+    <h4> Which device they used to view my Webpage?</h4>
+    <p> Most of them used their smartphone to view my webpage only a few would use tablet such as iPad to visit my webpage.
+        Since I put my webpage link on Instagram, people might find it easier to get access to my webpage. My acquaintances 
+        often browse Instagram as long as they are taking public transport or having spare time. Therefore, I chose Instagram
+        as my major promotion channel of <a href="https://melissa0816k.github.io/">my Webpage</a>.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="container-fluid">
 <div class="row">    
