@@ -38,6 +38,7 @@ window.alert("My last homework!");
 </div>
 </div>
 <br>
+<br>
 <div class="container-fluid">
 <div class="row">    
 <div class="col-md-6 col-sm-offset-1">
@@ -87,12 +88,78 @@ window.alert("My last homework!");
     </script>
 </div>
 <div class="col-md-4 col-sm-offset-1">
+    <br>
     <p> Hong Kong users spent three more mins on my webpage compared to people from United Kingdom and United States.</p> 
     <br>
     <p>To look into the details, users are from the cities of Hong Kong, London, Edinburgh, Sheffield, Medford, Wellesley and 
     Plano respectively. When they browsed my website, in their gadgets, they set the language to Taditional / Taiwanese Chinese,
     British English and American English. Among 79 sessions, 34 of them are using American English whereas 25 sessions use 
     Bristish English. Therefore, we can conclude that, American English is more commonly used. </p>
+</div>
+</div>
+</div>
+<br>
+<div class="container-fluid">
+<div class="row">    
+<div class="col-md-4 col-sm-offset-1">
+    <br>
+    <p>For users type, new visitors acquire 37 sessions and returning visitors acquire 42 sessions; thus 79 sessions in total.
+        But for the behaviour' returning visitors, the bounce rate is slightly higher than new visitors. Check below:<p>
+            <ul>
+                <li>Returning visitos:47.62%</li>
+                <li>New visitors:37.84%</li>
+            </ul>
+            <br>
+    <p>They mostly would reclick my homepage button to view. And due to the promotion, most of them would spend
+        time on Homework 5 which I persuaded my friends to take a look. <p>
+
+</div>
+<div class="col-md-6 col-sm-offset-1">
+<div id="mybar02" style="width: 600px;height:400px;"></div>
+<script>
+option = {
+    title : {
+        text: 'New and Returning Visitors Page View',
+        subtext: 'Google Analytddics'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['page view']
+    },
+
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            data : ['HomePage','Homework 1','Homework 2','Homework 3','Homework 4','Homework 5','Others']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'page view',
+            type:'bar',
+            data:[387, 88, 59, 56, 53, 74, 28],
+            markPoint : {
+               data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
+                ]
+            },
+
+        }
+    ]
+};
+ // Use the option to display chart
+        var myChart2 = echarts.init(document.getElementById('mybar02'));
+        myChart2.setOption(option);
+</script>
 </div>
 </div>
 </div>
