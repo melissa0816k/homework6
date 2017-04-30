@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>homework6</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Use echarts.js -->
+    <script src="echarts.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Homework<span class="logo_colour">Six</span></a></h1>
+          <h2>Google Analytics - Webpage's performance</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="examples.html">Audience Demographics</a></li>
+          <li><a href="page.html">Content Drilldown</a></li>
+          <li class="selected"><a href="another_page.html">Advantage</a></li>
+        </ul>
+      </div>
+    </div>
+    <h5><a href="https://melissa0816k.github.io/final/">Click Me for simple layout</a></h5>
+      <br>
+      <h2 style="text-align: center"> Advantage of using Instagram as promotion tool </h2>
+<br>
+<div class="container-fluid">
+<div class="row">    
+<div class="col-md-6 col-sm-offset-1">
+    <div id="mybar03" style="width: 600px;height:400px;"></div>
+<script>
+    option = {
+    title : {
+        text: 'New and Returning Visitors Page View',
+        subtext: 'Google Analytddics'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'right',
+        data:['mobile','desktop','tablet']
+    },
+    series: [
+        {
+            name:'device category',
+            type:'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:51, name:'mobile'},
+                {value:25, name:'desktop'},
+                {value:3, name:'tablet'}
+            ]
+        }
+    ]
+};
+// Use the option to display chart
+        var myChart3 = echarts.init(document.getElementById('mybar03'));
+        myChart3.setOption(option);
+</script>
+</div>
+<div class="col-md-4 col-sm-offset-1">
+    <br>
+    <h4> Which device they used to view my Webpage?</h4>
+    <p> Most of them used their smartphone to view my webpage only a few would use tablet such as iPad to visit my webpage.
+        Since I put my webpage link on Instagram, people might find it easier to get access to my webpage. My acquaintances 
+        often browse Instagram as long as they are taking public transport or having spare time. Therefore, I chose Instagram
+        as my major promotion channel of <a href="https://melissa0816k.github.io/">my Webpage</a>.</p>
+</div>
+</div>
+</div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+     <p><a href="index.html">Home</a> | <a href="examples.html">Audience Demographics</a> | <a href="page.html">Content Drilldown</a> | <a href="another_page.html">Advantage</a> | Reference: SimpleStyle |</p>
+    </div>
+  </div>
+</body>
+</html>
