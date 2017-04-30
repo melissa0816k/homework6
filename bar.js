@@ -9,15 +9,7 @@ option = {
     legend: {
         data:['page view']
     },
-    toolbox: {
-        show : true,
-        feature : {
-            dataView : {show: true, readOnly: false},
-            magicType : {show: true, type: ['line', 'bar']},
-            restore : {show: true},
-            saveAsImage : {show: true}
-        }
-    },
+
     calculable : true,
     xAxis : [
         {
@@ -32,20 +24,16 @@ option = {
     ],
     series : [
         {
-            name:'降水量',
+            name:'page view',
             type:'bar',
-            data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+            data:[387, 88, 59, 56, 53, 74, 28],
             markPoint : {
-                data : [
-                    {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183},
-                    {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
+               data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
                 ]
             },
-            markLine : {
-                data : [
-                    {type : 'average', name : '平均值'}
-                ]
-            }
+
         }
     ]
 };
